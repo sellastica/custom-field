@@ -1,0 +1,21 @@
+{
+	"name": "sellastica/custom-field",
+	"homepage": "https://github.com/sellastica/custom-field",
+	"license": "proprietary",
+	"authors": [
+		{
+			"name": "Tomáš Krejčí",
+			"homepage": "http://www.sellastica.com"
+		}
+	],
+	"require": {
+		"php": ">=7.1"
+	},
+	"require-dev": {
+	},
+	"autoload": {
+		"psr-4": {
+			"Sellastica\\CustomField\\": "src/"
+		}
+	}
+}
