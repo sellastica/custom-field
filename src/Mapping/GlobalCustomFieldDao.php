@@ -46,7 +46,7 @@ class GlobalCustomFieldDao extends \Sellastica\Entity\Mapping\Dao
 	/**
 	 * @return EntityCollection|\Sellastica\CustomField\Entity\GlobalCustomFieldCollection
 	 */
-	protected function getEmptyCollection(): EntityCollection
+	public function getEmptyCollection(): EntityCollection
 	{
 		return new GlobalCustomFieldCollection();
 	}

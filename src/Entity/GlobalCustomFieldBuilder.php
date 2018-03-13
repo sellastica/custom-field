@@ -1,13 +1,13 @@
 <?php
 namespace Sellastica\CustomField\Entity;
 
-use Sellastica\CustomField\Model\CustomFieldType;
+use Sellastica\Entity\IBuilder;
 use Sellastica\Entity\TBuilder;
 
 /**
  * @see GlobalCustomField
  */
-class GlobalCustomFieldBuilder implements \Sellastica\Entity\IBuilder
+class GlobalCustomFieldBuilder implements IBuilder
 {
 	use TBuilder;
 
@@ -15,7 +15,7 @@ class GlobalCustomFieldBuilder implements \Sellastica\Entity\IBuilder
 	private $namespace;
 	/** @var string */
 	private $slug;
-	/** @var CustomFieldType */
+	/** @var \Sellastica\CustomField\Model\CustomFieldType */
 	private $type;
 	/** @var string|null */
 	private $title;
@@ -30,7 +30,7 @@ class GlobalCustomFieldBuilder implements \Sellastica\Entity\IBuilder
 	public function __construct(
 		string $namespace,
 		string $slug,
-		CustomFieldType $type
+		\Sellastica\CustomField\Model\CustomFieldType $type
 	)
 	{
 		$this->namespace = $namespace;
