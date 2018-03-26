@@ -42,6 +42,22 @@ class CustomFieldFrontDisplayType
 	}
 
 	/**
+	 * @return bool
+	 */
+	public function isRange(): bool
+	{
+		return $this->type === self::RANGE;
+	}
+
+	/**
+	 * @return bool
+	 */
+	public function isNone(): bool
+	{
+		return $this->type === self::NONE;
+	}
+
+	/**
 	 * @return string
 	 */
 	public function __toString(): string
