@@ -1,7 +1,7 @@
 <?php
 namespace Sellastica\CustomField\Model;
 
-class CustomFieldDisplayType
+class CustomFieldAdminDisplayType
 {
 	const ONE_LINE_TEXT = 'one_line_text',
 		MULTI_LINE_TEXT = 'multi_line_text',
@@ -96,7 +96,7 @@ class CustomFieldDisplayType
 
 	/**
 	 * @param string $type
-	 * @return CustomFieldDisplayType
+	 * @return CustomFieldAdminDisplayType
 	 * @throws \InvalidArgumentException
 	 */
 	public static function from(string $type): self
