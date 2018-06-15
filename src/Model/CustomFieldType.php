@@ -56,6 +56,14 @@ class CustomFieldType
 	}
 
 	/**
+	 * @return bool
+	 */
+	public function isString(): bool
+	{
+		return $this->type === self::STRING;
+	}
+
+	/**
 	 * Returns retyped $value based on own type
 	 *
 	 * @param $value
