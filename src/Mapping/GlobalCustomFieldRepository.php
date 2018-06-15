@@ -1,9 +1,8 @@
 <?php
 namespace Sellastica\CustomField\Mapping;
 
-use Sellastica\CustomField\Entity\GlobalCustomField;
 use Sellastica\CustomField\Entity\IGlobalCustomFieldRepository;
-use Sellastica\DataGrid\Mapping\TFilterRulesRepository;
+use Sellastica\DataGrid\Mapping\Dibi\TFilterRulesRepository;
 
 /**
  * @property \Sellastica\CustomField\Mapping\GlobalCustomFieldDao $dao

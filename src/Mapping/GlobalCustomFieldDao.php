@@ -1,11 +1,9 @@
 <?php
 namespace Sellastica\CustomField\Mapping;
 
-use Sellastica\CustomField\Entity\GlobalCustomField;
 use Sellastica\CustomField\Entity\GlobalCustomFieldBuilder;
 use Sellastica\CustomField\Entity\GlobalCustomFieldCollection;
 use Sellastica\CustomField\Model\CustomFieldType;
-use Sellastica\DataGrid\Mapping\TFilterRulesDao;
 use Sellastica\Entity\Entity\EntityCollection;
 use Sellastica\Entity\Entity\IEntity;
 use Sellastica\Entity\IBuilder;
@@ -16,7 +14,7 @@ use Sellastica\Entity\IBuilder;
  */
 class GlobalCustomFieldDao extends \Sellastica\Entity\Mapping\Dao
 {
-	use TFilterRulesDao;
+	use \Sellastica\DataGrid\Mapping\Dibi\TFilterRulesDao;
 
 
 	/**

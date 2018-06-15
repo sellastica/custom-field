@@ -3,10 +3,10 @@ namespace Sellastica\CustomField\Entity;
 
 use Sellastica\Api\Model\IPayloadable;
 use Sellastica\CustomField\Model\CustomFieldType;
+use Sellastica\CustomField\Presentation\GlobalCustomFieldProxy;
 use Sellastica\Entity\Entity\TAbstractEntity;
 use Sellastica\Twig\Model\IProxable;
 use Sellastica\Twig\Model\ProxyConverter;
-use Sellastica\CustomField\Presentation\GlobalCustomFieldProxy;
 
 /**
  * @generate-builder

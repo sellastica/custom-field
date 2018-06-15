@@ -1,14 +1,12 @@
 <?php
 namespace Sellastica\CustomField\Mapping;
 
-use Sellastica\DataGrid\Mapping\TFilterRulesDibiMapper;
-
 /**
  * @see \Sellastica\CustomField\Entity\GlobalCustomField
  */
 class GlobalCustomFieldDibiMapper extends \Sellastica\Entity\Mapping\DibiMapper
 {
-	use TFilterRulesDibiMapper;
+	use \Sellastica\DataGrid\Mapping\Dibi\TFilterRulesDibiMapper;
 
 	/**
 	 * @param string $namespace

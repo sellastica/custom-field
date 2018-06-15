@@ -2,7 +2,7 @@
 namespace Sellastica\CustomField\Mapping;
 
 use Sellastica\CustomField\Entity\IGlobalCustomFieldRepository;
-use Sellastica\DataGrid\Mapping\TFilterRulesRepositoryProxy;
+use Sellastica\DataGrid\Mapping\Dibi\TFilterRulesRepositoryProxy;
 
 /**
  * @method \Sellastica\CustomField\Mapping\GlobalCustomFieldRepository getRepository()
