@@ -95,6 +95,14 @@ class CustomFieldAdminDisplayType
 	}
 
 	/**
+	 * @return bool
+	 */
+	public function isHtml(): bool
+	{
+		return $this->type === self::HTML;
+	}
+
+	/**
 	 * @param string $type
 	 * @return CustomFieldAdminDisplayType
 	 * @throws \InvalidArgumentException
