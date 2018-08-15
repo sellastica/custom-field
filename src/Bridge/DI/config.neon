@@ -1,7 +1,5 @@
 services:
-	globalCustomFieldRepository:
-		class: Sellastica\CustomField\Mapping\GlobalCustomFieldRepository(@extension.globalCustomFieldDao, @extension.globalCustomFieldFactory)
-		autowired: no
+	globalCustomFieldRepository: Sellastica\CustomField\Mapping\GlobalCustomFieldRepository(@extension.globalCustomFieldDao, @extension.globalCustomFieldFactory)
 	globalCustomFieldDao: Sellastica\CustomField\Mapping\GlobalCustomFieldDao(@extension.globalCustomFieldMapper, @extension.globalCustomFieldFactory)
 	globalCustomFieldMapper: Sellastica\CustomField\Mapping\GlobalCustomFieldDibiMapper
 	globalCustomFieldRepositoryProxy: Sellastica\CustomField\Mapping\GlobalCustomFieldRepositoryProxy
